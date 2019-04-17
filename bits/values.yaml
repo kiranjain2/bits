@@ -24,6 +24,7 @@ secrets:
   BITS_SERVICE_SIGNING_USER_PASSWORD: notpassword123
   BLOBSTORE_PASSWORD:  blobstore
 
+EIRINIFS_TAG: v33.0.0
 env:
   # Base domain of the SCF cluster.
   # Example: "my-scf-cluster.com"

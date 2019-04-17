@@ -130,8 +130,11 @@ spec:
           mountPath: /assets/
       initContainers:
       - name: "download-eirini-rootfs"
-        image: flintstonecf/eirinifs-downloader:latest
+        image: kiranjain2/eirinifs-downloader:latest
         command: ["/bin/sh", "-c", "./eirini-rootfs-downloader.sh"]
+        env:
+        - name: TAG
+          value: {{ .Values.EIRINIFS_TAG }}
         volumeMounts:
         - name: bits-assets
           mountPath: /assets/
