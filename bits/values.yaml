@@ -4,11 +4,6 @@ opi:
   use_registry_ingress: false
   use_docker: false
 
-  namespace: eirini
-  version: 0.0.0
-  image_tag: latest
-  stager_image: eirini/recipe
-
 kube:
   external_ips: []
 
@@ -23,8 +18,6 @@ secrets:
   BITS_SERVICE_SECRET: secret
   BITS_SERVICE_SIGNING_USER_PASSWORD: notpassword123
   BLOBSTORE_PASSWORD:  blobstore
-
-EIRINIFS_TAG: v33.0.0
 env:
   # Base domain of the SCF cluster.
   # Example: "my-scf-cluster.com"
